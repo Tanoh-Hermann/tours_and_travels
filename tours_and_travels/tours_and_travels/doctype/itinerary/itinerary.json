@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-02 11:15:48.931739",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "itinerary_date",
+  "description"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "itinerary_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Itinerary Date"
+  },
+  {
+   "columns": 7,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-02 11:15:48.931739",
+ "modified_by": "Administrator",
+ "module": "Tours And Travels",
+ "name": "Itinerary",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

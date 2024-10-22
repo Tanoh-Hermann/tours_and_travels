@@ -1,0 +1,204 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:restaurant_name",
+ "creation": "2022-11-03 16:27:24.974980",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "restaurant_name",
+  "restaurant_address",
+  "address_display",
+  "address_html",
+  "website",
+  "column_break_5",
+  "city",
+  "state",
+  "country",
+  "email_id",
+  "phone",
+  "image",
+  "restaurant_facility_tab",
+  "restaurant_facility",
+  "column_break_15",
+  "restaurant_facility_list",
+  "meal_package_tab",
+  "meal_package_list",
+  "restaurant_image_tab",
+  "restaurant_image",
+  "other_details_tab",
+  "other_details"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "restaurant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Restaurant Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "address_display",
+   "fieldtype": "Small Text",
+   "label": "Address Display",
+   "read_only": 1
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "restaurant_address.h_r_city",
+   "fetch_if_empty": 1,
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "City",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "city.state",
+   "fetch_if_empty": 1,
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "state.country",
+   "fetch_if_empty": 1,
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fetch_from": "restaurant_address.email_id",
+   "fetch_if_empty": 1,
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "restaurant_address.phone",
+   "fetch_if_empty": 1,
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "restaurant_facility_tab",
+   "fieldtype": "Tab Break",
+   "label": "Restaurant Facility"
+  },
+  {
+   "fieldname": "meal_package_tab",
+   "fieldtype": "Tab Break",
+   "label": "Meal Package"
+  },
+  {
+   "fieldname": "meal_package_list",
+   "fieldtype": "Table",
+   "label": "Meal Package List",
+   "options": "Meal Package List"
+  },
+  {
+   "fieldname": "restaurant_image_tab",
+   "fieldtype": "Tab Break",
+   "label": "Restaurant Image"
+  },
+  {
+   "fieldname": "restaurant_image",
+   "fieldtype": "Table",
+   "label": "Restaurant Image",
+   "options": "Restaurant Image"
+  },
+  {
+   "fieldname": "other_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "other_details",
+   "fieldtype": "Text Editor",
+   "label": "Other Details"
+  },
+  {
+   "depends_on": "eval:!doc.__islocal",
+   "fieldname": "restaurant_address",
+   "fieldtype": "Link",
+   "label": "Restaurant Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "restaurant_facility",
+   "fieldtype": "Table MultiSelect",
+   "label": "Restaurant Facility",
+   "options": "Restaurant Facility List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "restaurant_facility_list",
+   "fieldtype": "Small Text",
+   "label": "Restaurant Facility List",
+   "read_only": 1
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Restaurant Contract",
+   "link_doctype": "Contract",
+   "link_fieldname": "hotel_restaurant"
+  }
+ ],
+ "modified": "2022-12-13 12:15:44.816137",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Restaurant",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-03 15:55:37.963195",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "restaurant_facility"
+ ],
+ "fields": [
+  {
+   "columns": 4,
+   "fieldname": "restaurant_facility",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Restaurant Facility",
+   "options": "Restaurant Facility"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-03 15:55:37.963195",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Restaurant Facility List",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

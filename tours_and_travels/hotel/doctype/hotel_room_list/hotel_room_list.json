@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-02 15:48:02.505970",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hotel_room",
+  "room_type",
+  "description",
+  "total_capacity",
+  "nos_of_rooms",
+  "unit_price",
+  "available_room",
+  "status"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "hotel_room",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hotel Room",
+   "options": "Hotel Room",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "hotel_room.room_type",
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Room Type",
+   "options": "Room Type",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "hotel_room.total_capacity",
+   "fieldname": "total_capacity",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Total Capacity",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "nos_of_rooms",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nos of Rooms",
+   "mandatory_depends_on": "hotel_room",
+   "non_negative": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Unit Price",
+   "mandatory_depends_on": "hotel_room",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:doc.parent == parent.hotel_name",
+   "fieldname": "available_room",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Available Room",
+   "non_negative": 1
+  },
+  {
+   "columns": 1,
+   "default": "Not Available",
+   "depends_on": "eval:doc.parent == parent.hotel_name",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Available\nNot Available",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-14 17:15:24.098302",
+ "modified_by": "Administrator",
+ "module": "Hotel",
+ "name": "Hotel Room List",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

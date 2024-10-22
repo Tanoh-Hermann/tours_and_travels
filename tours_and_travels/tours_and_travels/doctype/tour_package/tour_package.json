@@ -1,0 +1,270 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-01 16:04:03.939390",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "package_name",
+  "package_type",
+  "package_category",
+  "country",
+  "state",
+  "column_break_7",
+  "arrival_date",
+  "departure_date",
+  "minimum_travellers",
+  "maximum_travellers",
+  "responsible",
+  "column_break_13",
+  "package_days_nights",
+  "company",
+  "image",
+  "hotel_tab",
+  "hotel_package_list",
+  "restaurant_tab",
+  "restaurant_package_list",
+  "transportation_tab",
+  "transportation_package_list",
+  "attraction_tab",
+  "attraction_package_list",
+  "guide_tab",
+  "guide_package_list",
+  "itinerary_details_tab",
+  "generate_itinerary_plan",
+  "itinerary",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "TP.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "TP.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "package_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "package_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Package Type",
+   "options": "\nDomestic\nInternational",
+   "reqd": 1
+  },
+  {
+   "fieldname": "package_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Package Category",
+   "options": "Package Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "minimum_travellers",
+   "fieldtype": "Int",
+   "label": "Minimum Travellers"
+  },
+  {
+   "fieldname": "maximum_travellers",
+   "fieldtype": "Int",
+   "label": "Maximum Travellers"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "label": "Arrival Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "label": "Departure Date",
+   "reqd": 1
+  },
+  {
+   "default": "__user",
+   "fieldname": "responsible",
+   "fieldtype": "Link",
+   "label": "Responsible",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "package_days_nights",
+   "fieldtype": "Small Text",
+   "label": "Package Days Nights",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tour Package",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "itinerary_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Itinerary Details"
+  },
+  {
+   "fieldname": "itinerary",
+   "fieldtype": "Table",
+   "label": "Itinerary",
+   "options": "Itinerary"
+  },
+  {
+   "fieldname": "hotel_tab",
+   "fieldtype": "Tab Break",
+   "label": "Hotel"
+  },
+  {
+   "fieldname": "hotel_package_list",
+   "fieldtype": "Table",
+   "label": "Hotel Package List",
+   "options": "Hotel Package List"
+  },
+  {
+   "fieldname": "restaurant_tab",
+   "fieldtype": "Tab Break",
+   "label": "Restaurant"
+  },
+  {
+   "fieldname": "restaurant_package_list",
+   "fieldtype": "Table",
+   "label": "Restaurant Package List",
+   "options": "Restaurant Package List"
+  },
+  {
+   "fieldname": "transportation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Transportation"
+  },
+  {
+   "fieldname": "transportation_package_list",
+   "fieldtype": "Table",
+   "label": "Transportation Package List",
+   "options": "Transportation Package List"
+  },
+  {
+   "depends_on": "eval:doc.docstatus < 1",
+   "description": "When you <i>change</i> the <b>Arrival Date</b> and <b>Departure Date</b> then first <i>save</i> the doctype and then <b>Generate Itinerary Plan.</b>",
+   "fieldname": "generate_itinerary_plan",
+   "fieldtype": "Button",
+   "label": "Generate Itinerary Plan"
+  },
+  {
+   "fieldname": "attraction_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attraction"
+  },
+  {
+   "fieldname": "attraction_package_list",
+   "fieldtype": "Table",
+   "label": "Attraction Package List",
+   "options": "Attraction Package List"
+  },
+  {
+   "fieldname": "guide_tab",
+   "fieldtype": "Tab Break",
+   "label": "Guide"
+  },
+  {
+   "fieldname": "guide_package_list",
+   "fieldtype": "Table",
+   "label": "Guide Package List",
+   "options": "Guide Package List"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Tour Package",
+   "link_doctype": "Tour Registration",
+   "link_fieldname": "tour_package"
+  }
+ ],
+ "modified": "2022-12-14 11:46:59.951554",
+ "modified_by": "Administrator",
+ "module": "Tours And Travels",
+ "name": "Tour Package",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "package_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "package_name",
+ "track_changes": 1
+}

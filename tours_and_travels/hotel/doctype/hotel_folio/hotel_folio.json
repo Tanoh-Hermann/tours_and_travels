@@ -1,0 +1,221 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-24 11:10:40.873804",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer",
+  "hotel",
+  "address",
+  "hotel_room",
+  "room_type",
+  "column_break_5",
+  "company",
+  "from_date",
+  "to_date",
+  "duration",
+  "days_nights",
+  "hotel_facility_list",
+  "extra_service",
+  "totals_section",
+  "room_qty",
+  "unit_price",
+  "column_break_14",
+  "extra_service_charge",
+  "total",
+  "reference_section",
+  "sales_invoice",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "HF.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "HF.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hotel",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hotel",
+   "options": "Hotel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hotel_room",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hotel Room",
+   "options": "Hotel Room",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "hotel_room.room_type",
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "label": "Room Type",
+   "options": "Room Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "hotel.hotel_facility_list",
+   "fieldname": "hotel_facility_list",
+   "fieldtype": "Small Text",
+   "label": "Hotel Facility List",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Hotel Folio",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "days_nights",
+   "fieldtype": "Data",
+   "label": "Days / Nights",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "room_qty",
+   "fieldtype": "Int",
+   "label": "Room Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "label": "Unit Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "extra_service",
+   "fieldtype": "Small Text",
+   "label": "Extra Service"
+  },
+  {
+   "fieldname": "extra_service_charge",
+   "fieldtype": "Currency",
+   "label": "Extra Service Charge"
+  },
+  {
+   "fieldname": "totals_section",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "hotel.address_display",
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "label": "Duration",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Sales Invoice",
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "hotel_folio"
+  }
+ ],
+ "modified": "2022-12-19 12:31:06.045087",
+ "modified_by": "Administrator",
+ "module": "Hotel",
+ "name": "Hotel Folio",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

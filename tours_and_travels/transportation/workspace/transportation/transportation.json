@@ -1,0 +1,134 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":5}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\"><b>Transportation</b></span>\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h4\\\"><i>Your Shortcuts</i></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Transportation Registration\",\"col\":6}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle\",\"col\":6}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Reports &amp; Masters<b></b></i></span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Key Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span>\",\"col\":12}},{\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Quick List-View</i></span>\",\"col\":12}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Transportation Registration\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Vehicle\",\"col\":4}}]",
+ "creation": "2022-11-21 15:50:35.447968",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "getting-started",
+ "idx": 0,
+ "label": "Transportation",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transportation Registration",
+   "link_count": 0,
+   "link_to": "Transportation Registration",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle",
+   "link_count": 0,
+   "link_to": "Vehicle",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Key Reports",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Transportation Details",
+   "link_count": 0,
+   "link_to": "Transportation Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Other Reports",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Transportation-wise Contract",
+   "link_count": 0,
+   "link_to": "Transportation-wise Contract",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Transportation-wise Tour Package Analytics",
+   "link_count": 0,
+   "link_to": "Transportation-wise Tour Package Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Transportation-wise Tour Registration Analytics",
+   "link_count": 0,
+   "link_to": "Transportation-wise Tour Registration Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-12-15 17:11:32.726928",
+ "modified_by": "Administrator",
+ "module": "Transportation",
+ "name": "Transportation",
+ "owner": "Administrator",
+ "parent_page": "Tours And Travels",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Transportation Registration",
+   "label": "Transportation Registration"
+  },
+  {
+   "document_type": "Vehicle",
+   "label": "Vehicle"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 34.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Transportation Registration",
+   "link_to": "Transportation Registration",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vehicle",
+   "link_to": "Vehicle",
+   "type": "DocType"
+  }
+ ],
+ "title": "Transportation"
+}

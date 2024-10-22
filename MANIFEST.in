@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include tours_and_travels *.css
+recursive-include tours_and_travels *.csv
+recursive-include tours_and_travels *.html
+recursive-include tours_and_travels *.ico
+recursive-include tours_and_travels *.js
+recursive-include tours_and_travels *.json
+recursive-include tours_and_travels *.md
+recursive-include tours_and_travels *.png
+recursive-include tours_and_travels *.py
+recursive-include tours_and_travels *.svg
+recursive-include tours_and_travels *.txt
+recursive-exclude tours_and_travels *.pyc

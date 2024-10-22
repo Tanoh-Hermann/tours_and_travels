@@ -1,0 +1,425 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":5}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\"><b>Tours And Travels</b></span>\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Your Shortcuts</i></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tour Package\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tour Registration\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Contract\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attraction\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Reports &amp; Masters</i></span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":3}},{\"type\":\"card\",\"data\":{\"card_name\":\"Region Configuration\",\"col\":3}},{\"type\":\"card\",\"data\":{\"card_name\":\"Contract &amp; Registration\",\"col\":3}},{\"type\":\"card\",\"data\":{\"card_name\":\"Travel Services\",\"col\":3}},{\"type\":\"card\",\"data\":{\"card_name\":\"Tour Package Analytics Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Tour Registration Analytics Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Quick List-View</i></span>\",\"col\":12}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Tour Package\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Tour Registration\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Contract\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Attraction\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Guide\",\"col\":4}}]",
+ "creation": "2022-11-15 16:26:51.429421",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "map",
+ "idx": 0,
+ "label": "Tours And Travels",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tour Package",
+   "link_count": 0,
+   "link_to": "Tour Package",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Package Category",
+   "link_count": 0,
+   "link_to": "Package Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Travelling Seasons",
+   "link_count": 0,
+   "link_to": "Travelling Seasons",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Contract &amp; Registration",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tour Registration",
+   "link_count": 0,
+   "link_to": "Tour Registration",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Contract",
+   "link_count": 0,
+   "link_to": "Contract",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quotation",
+   "link_count": 0,
+   "link_to": "Quotation",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Region Configuration",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "City",
+   "link_count": 0,
+   "link_to": "City",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "State",
+   "link_count": 0,
+   "link_to": "State",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Country",
+   "link_count": 0,
+   "link_to": "Country",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Travel Services",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Attraction",
+   "link_count": 0,
+   "link_to": "Attraction",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Attraction Service",
+   "link_count": 0,
+   "link_to": "Attraction Service",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Guide",
+   "link_count": 0,
+   "link_to": "Guide",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Guide Service",
+   "link_count": 0,
+   "link_to": "Guide Service",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tour Package Analytics Reports",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel-wise Tour Package Analytics",
+   "link_count": 0,
+   "link_to": "Hotel-wise Tour Package Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Restaurant-wise Tour Package Analytics",
+   "link_count": 0,
+   "link_to": "Restaurant-wise Tour Package Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Transportation-wise Tour Package Analytics",
+   "link_count": 0,
+   "link_to": "Transportation-wise Tour Package Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Attraction-wise Tour Package Analytics",
+   "link_count": 0,
+   "link_to": "Attraction-wise Tour Package Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Guide-wise Tour Package Analytics",
+   "link_count": 0,
+   "link_to": "Guide-wise Tour Package Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Other Reports",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Attraction Details",
+   "link_count": 0,
+   "link_to": "Attraction Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Guide Details",
+   "link_count": 0,
+   "link_to": "Guide Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel-wise Contract",
+   "link_count": 0,
+   "link_to": "Hotel-wise Contract",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Restaurant-wise Contract",
+   "link_count": 0,
+   "link_to": "Restaurant-wise Contract",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Transportation-wise Contract",
+   "link_count": 0,
+   "link_to": "Transportation-wise Contract",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tour Registration Analytics Reports",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Tour Registration Analytics",
+   "link_count": 0,
+   "link_to": "Tour Registration Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel-wise Tour Registration Analytics",
+   "link_count": 0,
+   "link_to": "Hotel-wise Tour Registration Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Restaurant-wise Tour Registration Analytics",
+   "link_count": 0,
+   "link_to": "Restaurant-wise Tour Registration Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Transportation-wise Tour Registration Analytics",
+   "link_count": 0,
+   "link_to": "Transportation-wise Tour Registration Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Attraction-wise Tour Registration Analytics",
+   "link_count": 0,
+   "link_to": "Attraction-wise Tour Registration Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Guide-wise Tour Registration Analytics",
+   "link_count": 0,
+   "link_to": "Guide-wise Tour Registration Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-12-20 11:43:32.551031",
+ "modified_by": "Administrator",
+ "module": "Tours And Travels",
+ "name": "Tours And Travels",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Guide",
+   "label": "Guide"
+  },
+  {
+   "document_type": "Tour Package",
+   "label": "Tour Package",
+   "quick_list_filter": "{\"docstatus\":[\"=\",\"0\"]}"
+  },
+  {
+   "document_type": "Tour Registration",
+   "label": "Tour Registration",
+   "quick_list_filter": "{\"docstatus\":[\"=\",\"0\"]}"
+  },
+  {
+   "document_type": "Contract",
+   "label": "Contract",
+   "quick_list_filter": "{\"docstatus\":[\"=\",\"0\"]}"
+  },
+  {
+   "document_type": "Attraction",
+   "label": "Attraction"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 31.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tour Package",
+   "link_to": "Tour Package",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Attraction",
+   "link_to": "Attraction",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Tour Registration",
+   "link_to": "Tour Registration",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Contract",
+   "link_to": "Contract",
+   "type": "DocType"
+  }
+ ],
+ "title": "Tours And Travels"
+}

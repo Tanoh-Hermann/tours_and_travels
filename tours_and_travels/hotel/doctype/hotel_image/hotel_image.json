@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-02 16:58:39.731066",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bedroom",
+  "bathroom",
+  "gallery",
+  "kitchen",
+  "inside_view",
+  "outside_view",
+  "other_image"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "bedroom",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Bedroom"
+  },
+  {
+   "columns": 2,
+   "fieldname": "bathroom",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Bathroom"
+  },
+  {
+   "columns": 2,
+   "fieldname": "gallery",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Gallery"
+  },
+  {
+   "columns": 1,
+   "fieldname": "kitchen",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kitchen"
+  },
+  {
+   "columns": 1,
+   "fieldname": "outside_view",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Outside View"
+  },
+  {
+   "columns": 1,
+   "fieldname": "inside_view",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Inside View"
+  },
+  {
+   "columns": 1,
+   "fieldname": "other_image",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Other Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-03 16:20:42.586914",
+ "modified_by": "Administrator",
+ "module": "Hotel",
+ "name": "Hotel Image",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

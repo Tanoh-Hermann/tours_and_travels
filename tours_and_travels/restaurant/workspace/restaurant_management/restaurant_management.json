@@ -1,0 +1,155 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":5}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\"><b>Restaurant Management</b></span>\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span>\",\"col\":3}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span><br>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Your Shortcuts</i></span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Restaurant\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Restaurant Facility\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Meal Type\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Reports &amp; Masters</i></span>\",\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Key Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b></b></span><span class=\\\"h6\\\">___________________________________________________________________________________________________________________________________________________________________________________________________</span>\",\"col\":12}},{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><i>Quick List-View</i></span>\",\"col\":12}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Restaurant\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Restaurant Facility\",\"col\":4}},{\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Meal Type\",\"col\":4}}]",
+ "creation": "2022-11-15 17:21:00.444570",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "retail",
+ "idx": 0,
+ "label": "Restaurant Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant",
+   "link_count": 0,
+   "link_to": "Restaurant",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant Facility",
+   "link_count": 0,
+   "link_to": "Restaurant Facility",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meal Type",
+   "link_count": 0,
+   "link_to": "Meal Type",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Key Reports",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Restaurant Details",
+   "link_count": 0,
+   "link_to": "Restaurant Details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Other Reports",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Restaurant-wise Contract",
+   "link_count": 0,
+   "link_to": "Restaurant-wise Contract",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Restaurant-wise Tour Package Analytics",
+   "link_count": 0,
+   "link_to": "Restaurant-wise Tour Package Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Restaurant-wise Tour Registration Analytics",
+   "link_count": 0,
+   "link_to": "Restaurant-wise Tour Registration Analytics",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-12-15 16:46:39.422174",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Restaurant Management",
+ "owner": "Administrator",
+ "parent_page": "Tours And Travels",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Restaurant",
+   "label": "Restaurant"
+  },
+  {
+   "document_type": "Restaurant Facility",
+   "label": "Restaurant Facility"
+  },
+  {
+   "document_type": "Meal Type",
+   "label": "Meal Type"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 33.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Restaurant",
+   "link_to": "Restaurant",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Restaurant Facility",
+   "link_to": "Restaurant Facility",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Meal Type",
+   "link_to": "Meal Type",
+   "type": "DocType"
+  }
+ ],
+ "title": "Restaurant Management"
+}

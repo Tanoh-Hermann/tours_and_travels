@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-03 16:18:38.597808",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inside_view",
+  "outside_view",
+  "image_1",
+  "image_2",
+  "image_3"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "inside_view",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Inside View"
+  },
+  {
+   "columns": 2,
+   "fieldname": "outside_view",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Outside View"
+  },
+  {
+   "columns": 2,
+   "fieldname": "image_1",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Image 1"
+  },
+  {
+   "columns": 2,
+   "fieldname": "image_2",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Image 2"
+  },
+  {
+   "columns": 2,
+   "fieldname": "image_3",
+   "fieldtype": "Attach",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Image 3"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-03 16:21:59.352790",
+ "modified_by": "Administrator",
+ "module": "Restaurant",
+ "name": "Restaurant Image",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,35 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-12-14 16:21:09.465495",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-12-14 17:02:23.962003",
+ "modified_by": "Administrator",
+ "module": "Tours And Travels",
+ "name": "Hotel-wise Contract",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Contract",
+ "report_name": "Hotel-wise Contract",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "System Manager"
+  }
+ ]
+}

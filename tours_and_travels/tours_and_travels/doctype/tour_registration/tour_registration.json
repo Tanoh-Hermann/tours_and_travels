@@ -1,0 +1,412 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-14 14:10:34.087147",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer",
+  "tour_package",
+  "package_name",
+  "package_category",
+  "country",
+  "state",
+  "column_break_5",
+  "package_days_nights",
+  "company",
+  "date",
+  "arrival_date",
+  "departure_date",
+  "package_type",
+  "hotel_tab",
+  "hotel_package_list",
+  "section_break_14",
+  "hotel_total_qty",
+  "column_break_19",
+  "hotel_total_amount",
+  "section_break_17",
+  "hotel_brief_description",
+  "restaurant_tab",
+  "restaurant_package_list",
+  "section_break_20",
+  "restaurant_total_qty",
+  "column_break_27",
+  "restaurant_total_amount",
+  "section_break_22",
+  "restaurant_brief_description",
+  "transportation_tab",
+  "transportation_package_list",
+  "section_break_28",
+  "transportation_total_qty",
+  "column_break_35",
+  "transportation_total_amount",
+  "section_break_30",
+  "transportation_brief_description",
+  "attraction_tab",
+  "attraction_package_list",
+  "section_break_34",
+  "attraction_total_qty",
+  "column_break_43",
+  "attraction_total_amount",
+  "section_break_36",
+  "attraction_brief_description",
+  "guide_tab",
+  "guide_package_list",
+  "section_break_40",
+  "guide_total_amount",
+  "section_break_42",
+  "guide_brief_description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "TR.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "TR.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tour_package",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tour Package",
+   "options": "Tour Package",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "tour_package.package_category",
+   "fieldname": "package_category",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Package Category",
+   "options": "Package Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "tour_package.arrival_date",
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Arrival Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "tour_package.departure_date",
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "label": "Departure Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tour Registration",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "tour_package.country",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "tour_package.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hotel_tab",
+   "fieldtype": "Tab Break",
+   "label": "Hotel"
+  },
+  {
+   "fieldname": "hotel_package_list",
+   "fieldtype": "Table",
+   "label": "Hotel Package List",
+   "options": "Hotel Package List"
+  },
+  {
+   "fieldname": "restaurant_tab",
+   "fieldtype": "Tab Break",
+   "label": "Restaurant"
+  },
+  {
+   "fieldname": "restaurant_package_list",
+   "fieldtype": "Table",
+   "label": "Restaurant Package List",
+   "options": "Restaurant Package List"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hotel_total_amount",
+   "fieldtype": "Currency",
+   "label": "Hotel Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "hotel_brief_description",
+   "fieldtype": "Small Text",
+   "label": "Hotel Brief Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "restaurant_total_amount",
+   "fieldtype": "Currency",
+   "label": "Restaurant Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "restaurant_brief_description",
+   "fieldtype": "Small Text",
+   "label": "Restaurant Brief Description",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "tour_package.package_days_nights",
+   "fieldname": "package_days_nights",
+   "fieldtype": "Small Text",
+   "label": "Package Days Nights",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "tour_package.package_name",
+   "fieldname": "package_name",
+   "fieldtype": "Data",
+   "label": "Package Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transportation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Transportation"
+  },
+  {
+   "fieldname": "transportation_package_list",
+   "fieldtype": "Table",
+   "label": "Transportation Package List",
+   "options": "Transportation Package List"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transportation_total_amount",
+   "fieldtype": "Currency",
+   "label": "Transportation Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_30",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transportation_brief_description",
+   "fieldtype": "Small Text",
+   "label": "Transportation Brief Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attraction_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attraction"
+  },
+  {
+   "fieldname": "attraction_package_list",
+   "fieldtype": "Table",
+   "label": "Attraction Package List",
+   "options": "Attraction Package List"
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attraction_total_amount",
+   "fieldtype": "Currency",
+   "label": "Attraction Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attraction_brief_description",
+   "fieldtype": "Small Text",
+   "label": "Attraction Brief Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "guide_tab",
+   "fieldtype": "Tab Break",
+   "label": "Guide"
+  },
+  {
+   "fieldname": "guide_package_list",
+   "fieldtype": "Table",
+   "label": "Guide Package List",
+   "options": "Guide Package List"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "guide_total_amount",
+   "fieldtype": "Currency",
+   "label": "Guide Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "guide_brief_description",
+   "fieldtype": "Small Text",
+   "label": "Guide Brief Description",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "tour_package.package_type",
+   "fieldname": "package_type",
+   "fieldtype": "Select",
+   "label": "Package Type",
+   "options": "\nDomestic\nInternational",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hotel_total_qty",
+   "fieldtype": "Int",
+   "label": "Hotel Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "restaurant_total_qty",
+   "fieldtype": "Int",
+   "label": "Restaurant Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transportation_total_qty",
+   "fieldtype": "Int",
+   "label": "Transportation Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attraction_total_qty",
+   "fieldtype": "Int",
+   "label": "Attraction Total Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "Tour Registration",
+   "link_doctype": "Quotation",
+   "link_fieldname": "tour_registration"
+  }
+ ],
+ "modified": "2022-12-15 13:50:51.383688",
+ "modified_by": "Administrator",
+ "module": "Tours And Travels",
+ "name": "Tour Registration",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "package_name"
+}

@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:attraction_name",
+ "creation": "2022-12-08 14:14:07.877825",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attraction_name",
+  "attraction_address",
+  "address_display",
+  "address_html",
+  "website",
+  "image",
+  "column_break_7",
+  "city",
+  "state",
+  "country",
+  "email_id",
+  "phone",
+  "attraction_service_tab",
+  "attraction_service_list",
+  "other_details_tab",
+  "other_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "attraction_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attraction Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "depends_on": "eval:!doc.__islocal",
+   "fieldname": "attraction_address",
+   "fieldtype": "Link",
+   "label": "Attraction Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_display",
+   "fieldtype": "Small Text",
+   "label": "Address Display",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Address Html"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "attraction_address.h_r_city",
+   "fetch_if_empty": 1,
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "City",
+   "options": "City",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "city.state",
+   "fetch_if_empty": 1,
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "state.country",
+   "fetch_if_empty": 1,
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fetch_from": "attraction_address.email_id",
+   "fetch_if_empty": 1,
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "attraction_address.phone",
+   "fetch_if_empty": 1,
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "attraction_service_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attraction Service"
+  },
+  {
+   "fieldname": "other_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "other_details",
+   "fieldtype": "Text Editor",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "attraction_service_list",
+   "fieldtype": "Table",
+   "label": "Attraction Service List",
+   "options": "Attraction Service List"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-13 12:12:44.829636",
+ "modified_by": "Administrator",
+ "module": "Tours And Travels",
+ "name": "Attraction",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

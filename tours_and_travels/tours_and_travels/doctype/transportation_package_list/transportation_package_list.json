@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-21 10:56:52.957899",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "journey_date",
+  "source_location",
+  "destination",
+  "transportation",
+  "vehicle",
+  "description",
+  "qty",
+  "standard_unit_price",
+  "unit_price",
+  "total"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "journey_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Journey Date",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "source_location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Location",
+   "options": "City",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "destination",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Destination",
+   "options": "City",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "transportation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Transportation",
+   "options": "Transportation Registration",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "columns": 1,
+   "default": "1",
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "vehicle.per_day_cost",
+   "fetch_if_empty": 1,
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Unit Price",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle.per_day_cost",
+   "fieldname": "standard_unit_price",
+   "fieldtype": "Currency",
+   "label": "Standard Unit Price",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-13 13:58:48.397272",
+ "modified_by": "Administrator",
+ "module": "Tours And Travels",
+ "name": "Transportation Package List",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
