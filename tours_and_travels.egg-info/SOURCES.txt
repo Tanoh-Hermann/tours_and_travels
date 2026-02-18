@@ -115,7 +115,6 @@ tours_and_travels/restaurant/report/restaurant_details/restaurant_details.py
 tours_and_travels/restaurant/workspace/restaurant_management/restaurant_management.json
 tours_and_travels/templates/__init__.py
 tours_and_travels/templates/pages/__init__.py
-tours_and_travels/templates/pages/__pycache__/__init__.py
 tours_and_travels/tours_and_travels/__init__.py
 tours_and_travels/tours_and_travels/doctype/__init__.py
 tours_and_travels/tours_and_travels/doctype/attraction/__init__.py
@@ -299,4 +298,3 @@ tours_and_travels/transportation/report/transportation_details/transportation_de
 tours_and_travels/transportation/report/transportation_details/transportation_details.py
 tours_and_travels/transportation/workspace/transportation/transportation.json
 tours_and_travels/www/__init__.py
-tours_and_travels/www/__pycache__/__init__.py
