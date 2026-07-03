@@ -1,0 +1,7 @@
+# Artefacts de build / cache (ne pas versionner)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+node_modules/
+*.swp
